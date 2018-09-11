@@ -53,17 +53,25 @@ nav li {
     margin-left: 0; }
 
 .mail {
-  background: #999;
-  padding: 20px;
-  display: flex;
-  flex-wrap: no-wrap;
-  width: 100%;
+  display: block;
+  width: 620px;
+  padding: 10px;
+  background: #f5f2f0;
 }
 
 .mail_item {
-  flex: 0 0 600px;
-  margin: 0 10px;
   background: #fff;
   height: auto;
-  max-width: 600px;
+  width: 600px;
+}
+
+.code {
+  width: calc(100% - 620px);
+  background-color: #fff;
+  padding: 15px;
+}
+
+.wrapper {
+  display: flex;
+  padding: 20px;
 }

@@ -1,115 +1,431 @@
 <?php get_header(); ?>
 <section class="page">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12">
-				<div class="breadcrumbs clearfix">
-					<ul>
-						<?php bcn_display(); ?>
-					</ul>
-				</div>
-			</div>
+	<div class="wrapper">	
+		<div class="mail">
+	   	<div class="mail_item">
+	   		<?php 
+					$banner_one = get_field('banner_one');
+					$banner_two = get_field('banner_two');
+					$banner_three = get_field('banner_three');
+	 				get_template_part( 'tamplates/header-mail' );  
+	 				get_template_part( 'tamplates/variative-mail' );  
+	 				get_template_part( 'tamplates/footer-mail' ); 
+	 			?>
+	   	</div>
+		</div>    
+		<div class="code">
+	   	<div class="code_item">
+		   	<pre>
+				   	<code class="language-markup">
+				   		<script type="prism-html-markup">
+					   		<?php 
+									$banner_one = get_field('banner_one');
+									$banner_two = get_field('banner_two');
+									$banner_three = get_field('banner_three');
+					 				get_template_part( 'tamplates/head-mail' );
+					 				get_template_part( 'tamplates/header-mail' );  
+					 				get_template_part( 'tamplates/variative-mail' );  
+					 				get_template_part( 'tamplates/footer-mail' ); 
+					 			?>
+				   		</script>
+				   	</code>
+		   	</pre>
+	   	</div>
 		</div>
 	</div>
-	<div class="mail">
-   	<div class="mail_item">
-	   	<?php get_template_part( 'tamplates/header-mail' ); ?>
-   		<?php get_template_part( 'tamplates/mail-variative-123' ); ?>
-   		<?php get_template_part( 'tamplates/footer-mail' ); ?>
-   	</div>
-   	<div class="mail_item">
-	   	<?php get_template_part( 'tamplates/header-mail' ); ?>
-   		<?php get_template_part( 'tamplates/mail-variative-213' ); ?>
-   		<?php get_template_part( 'tamplates/footer-mail' ); ?>
-   	</div>
-   	<div class="mail_item">
-	   	<?php get_template_part( 'tamplates/header-mail' ); ?>
-   		<?php get_template_part( 'tamplates/mail-variative-321' ); ?>
-   		<?php get_template_part( 'tamplates/footer-mail' ); ?>
-   	</div>
-   	<div class="mail_item">
-	   	<?php get_template_part( 'tamplates/header-mail' ); ?>
-   		<?php get_template_part( 'tamplates/mail-variative-132' ); ?>
-   		<?php get_template_part( 'tamplates/footer-mail' ); ?>
-   	</div>
-   	<div class="mail_item">
-	   	<?php get_template_part( 'tamplates/header-mail' ); ?>
-   		<?php get_template_part( 'tamplates/mail-variative-231' ); ?>
-   		<?php get_template_part( 'tamplates/footer-mail' ); ?>
-   	</div>
-   	<div class="mail_item">
-	   	<?php get_template_part( 'tamplates/header-mail' ); ?>
-   		<?php get_template_part( 'tamplates/mail-variative-312' ); ?>	
-   		<?php get_template_part( 'tamplates/footer-mail' ); ?>
-   	</div>
-	</div>    
-	<div class="mail">
-   	<div class="mail_item">
-	   	<pre>
-			   	<code class="language-markup">
-			   		<script type="prism-html-markup">
-					   	<?php get_template_part( 'tamplates/header-mail' ); ?>
-				   		<?php get_template_part( 'tamplates/mail-variative-123' ); ?>
-				   		<?php get_template_part( 'tamplates/footer-mail' ); ?>
-			   		</script>
-			   	</code>
-	   	</pre>
-   	</div>
-   	<div class="mail_item">
-	   	<pre>
-			   	<code class="language-markup">
-			   		<script type="prism-html-markup">
-					   	<?php get_template_part( 'tamplates/header-mail' ); ?>
-				   		<?php get_template_part( 'tamplates/mail-variative-213' ); ?>
-				   		<?php get_template_part( 'tamplates/footer-mail' ); ?>
-			   		</script>
-			   	</code>
-	   	</pre>
-   	</div>
-   	<div class="mail_item">
-	   	<pre>
-			   	<code class="language-markup">
-			   		<script type="prism-html-markup">
-					   	<?php get_template_part( 'tamplates/header-mail' ); ?>
-				   		<?php get_template_part( 'tamplates/mail-variative-321' ); ?>
-				   		<?php get_template_part( 'tamplates/footer-mail' ); ?>
-			   		</script>
-			   	</code>
-	   	</pre>
-   	</div>
-   	<div class="mail_item">
-	   	<pre>
-			   	<code class="language-markup">
-			   		<script type="prism-html-markup">
-					   	<?php get_template_part( 'tamplates/header-mail' ); ?>
-				   		<?php get_template_part( 'tamplates/mail-variative-132' ); ?>
-				   		<?php get_template_part( 'tamplates/footer-mail' ); ?>
-			   		</script>
-			   	</code>
-	   	</pre>
-   	</div>
-   	<div class="mail_item">
-	   	<pre>
-			   	<code class="language-markup">
-			   		<script type="prism-html-markup">
-					   	<?php get_template_part( 'tamplates/header-mail' ); ?>
-				   		<?php get_template_part( 'tamplates/mail-variative-231' ); ?>
-				   		<?php get_template_part( 'tamplates/footer-mail' ); ?>
-			   		</script>
-			   	</code>
-	   	</pre>
-   	</div>
-   	<div class="mail_item">
-	   	<pre>
-			   	<code class="language-markup">
-			   		<script type="prism-html-markup">
-					   	<?php get_template_part( 'tamplates/header-mail' ); ?>
-				   		<?php get_template_part( 'tamplates/mail-variative-312' ); ?>	
-				   		<?php get_template_part( 'tamplates/footer-mail' ); ?>
-			   		</script>
-			   	</code>
-	   	</pre>
-   	</div>
-	</div>      
+
+
+	<div class="wrapper">	
+		<div class="mail">
+	   	<div class="mail_item">
+	   		<?php 
+					$banner_one = get_field('banner_two');
+					$banner_two = get_field('banner_one');
+					$banner_three = get_field('banner_three');
+	 				get_template_part( 'tamplates/header-mail' );  
+	 				get_template_part( 'tamplates/variative-mail' );  
+	 				get_template_part( 'tamplates/footer-mail' ); 
+	 			?>
+	   	</div>
+		</div>    
+		<div class="code">
+	   	<div class="code_item">
+		   	<pre>
+				   	<code class="language-markup">
+				   		<script type="prism-html-markup">
+					   		<?php 
+									$banner_one = get_field('banner_two');
+									$banner_two = get_field('banner_one');
+									$banner_three = get_field('banner_three');
+					 				get_template_part( 'tamplates/head-mail' );
+					 				get_template_part( 'tamplates/header-mail' );  
+					 				get_template_part( 'tamplates/variative-mail' );  
+					 				get_template_part( 'tamplates/footer-mail' ); 
+					 			?>
+				   		</script>
+				   	</code>
+		   	</pre>
+	   	</div>
+		</div>
+	</div>
+
+
+	<div class="wrapper">	
+		<div class="mail">
+	   	<div class="mail_item">
+	   		<?php 
+					$banner_one = get_field('banner_three');
+					$banner_two = get_field('banner_two');
+					$banner_three = get_field('banner_one');
+	 				get_template_part( 'tamplates/header-mail' );  
+	 				get_template_part( 'tamplates/variative-mail' );  
+	 				get_template_part( 'tamplates/footer-mail' ); 
+	 			?>
+	   	</div>
+		</div>    
+		<div class="code">
+	   	<div class="code_item">
+		   	<pre>
+				   	<code class="language-markup">
+				   		<script type="prism-html-markup">
+					   		<?php 
+									$banner_one = get_field('banner_three');
+									$banner_two = get_field('banner_two');
+									$banner_three = get_field('banner_one');
+					 				get_template_part( 'tamplates/head-mail' );
+					 				get_template_part( 'tamplates/header-mail' );  
+					 				get_template_part( 'tamplates/variative-mail' );  
+					 				get_template_part( 'tamplates/footer-mail' ); 
+					 			?>
+				   		</script>
+				   	</code>
+		   	</pre>
+	   	</div>
+		</div>
+	</div>
+
+
+	<div class="wrapper">	
+		<div class="mail">
+	   	<div class="mail_item">
+	   		<?php 
+					$banner_one = get_field('banner_one');
+					$banner_two = get_field('banner_three');
+					$banner_three = get_field('banner_two');
+	 				get_template_part( 'tamplates/header-mail' );  
+	 				get_template_part( 'tamplates/variative-mail' );  
+	 				get_template_part( 'tamplates/footer-mail' ); 
+	 			?>
+	   	</div>
+		</div>    
+		<div class="code">
+	   	<div class="code_item">
+		   	<pre>
+				   	<code class="language-markup">
+				   		<script type="prism-html-markup">
+					   		<?php 
+									$banner_one = get_field('banner_one');
+									$banner_two = get_field('banner_three');
+									$banner_three = get_field('banner_two');
+					 				get_template_part( 'tamplates/head-mail' );
+					 				get_template_part( 'tamplates/header-mail' );  
+					 				get_template_part( 'tamplates/variative-mail' );  
+					 				get_template_part( 'tamplates/footer-mail' ); 
+					 			?>
+				   		</script>
+				   	</code>
+		   	</pre>
+	   	</div>
+		</div>
+	</div>
+
+
+	<div class="wrapper">	
+		<div class="mail">
+	   	<div class="mail_item">
+	   		<?php 
+					$banner_one = get_field('banner_two');
+					$banner_two = get_field('banner_three');
+					$banner_three = get_field('banner_one');
+	 				get_template_part( 'tamplates/header-mail' );  
+	 				get_template_part( 'tamplates/variative-mail' );  
+	 				get_template_part( 'tamplates/footer-mail' ); 
+	 			?>
+	   	</div>
+		</div>    
+		<div class="code">
+	   	<div class="code_item">
+		   	<pre>
+				   	<code class="language-markup">
+				   		<script type="prism-html-markup">
+					   		<?php 
+									$banner_one = get_field('banner_two');
+									$banner_two = get_field('banner_three');
+									$banner_three = get_field('banner_one');
+					 				get_template_part( 'tamplates/head-mail' );
+					 				get_template_part( 'tamplates/header-mail' );  
+					 				get_template_part( 'tamplates/variative-mail' );  
+					 				get_template_part( 'tamplates/footer-mail' ); 
+					 			?>
+				   		</script>
+				   	</code>
+		   	</pre>
+	   	</div>
+		</div>
+	</div>
+
+
+	<div class="wrapper">	
+		<div class="mail">
+	   	<div class="mail_item">
+	   		<?php 
+					$banner_one = get_field('banner_three');
+					$banner_two = get_field('banner_two');
+					$banner_three = get_field('banner_one');
+	 				get_template_part( 'tamplates/header-mail' );  
+	 				get_template_part( 'tamplates/variative-mail' );  
+	 				get_template_part( 'tamplates/footer-mail' ); 
+	 			?>
+	   	</div>
+		</div>    
+		<div class="code">
+	   	<div class="code_item">
+		   	<pre>
+				   	<code class="language-markup">
+				   		<script type="prism-html-markup">
+					   		<?php 
+									$banner_one = get_field('banner_three');
+									$banner_two = get_field('banner_two');
+									$banner_three = get_field('banner_one');
+					 				get_template_part( 'tamplates/head-mail' );
+					 				get_template_part( 'tamplates/header-mail' );  
+					 				get_template_part( 'tamplates/variative-mail' );  
+					 				get_template_part( 'tamplates/footer-mail' ); 
+					 			?>
+				   		</script>
+				   	</code>
+		   	</pre>
+	   	</div>
+		</div>
+	</div>
+
+
+	<div class="wrapper">	
+		<div class="mail">
+	   	<div class="mail_item">
+	   		<?php 
+					$banner_one = get_field('banner_one');
+					$banner_two = get_field('banner_two');
+					$banner_three = get_field('banner_three');
+	 				get_template_part( 'tamplates/header-mail--new' );  
+	 				get_template_part( 'tamplates/variative-mail' );  
+	 				get_template_part( 'tamplates/footer-mail--new' ); 
+	 			?>
+	   	</div>
+		</div>    
+		<div class="code">
+	   	<div class="code_item">
+		   	<pre>
+				   	<code class="language-markup">
+				   		<script type="prism-html-markup">
+					   		<?php 
+									$banner_one = get_field('banner_one');
+									$banner_two = get_field('banner_two');
+									$banner_three = get_field('banner_three');
+					 				get_template_part( 'tamplates/head-mail' );
+					 				get_template_part( 'tamplates/header-mail--new' );  
+					 				get_template_part( 'tamplates/variative-mail' );  
+					 				get_template_part( 'tamplates/footer-mail--new' ); 
+					 			?>
+				   		</script>
+				   	</code>
+		   	</pre>
+	   	</div>
+		</div>
+	</div>
+
+
+	<div class="wrapper">	
+		<div class="mail">
+	   	<div class="mail_item">
+	   		<?php 
+					$banner_one = get_field('banner_two');
+					$banner_two = get_field('banner_one');
+					$banner_three = get_field('banner_three');
+	 				get_template_part( 'tamplates/header-mail--new' );  
+	 				get_template_part( 'tamplates/variative-mail' );  
+	 				get_template_part( 'tamplates/footer-mail--new' ); 
+	 			?>
+	   	</div>
+		</div>    
+		<div class="code">
+	   	<div class="code_item">
+		   	<pre>
+				   	<code class="language-markup">
+				   		<script type="prism-html-markup">
+					   		<?php 
+									$banner_one = get_field('banner_two');
+									$banner_two = get_field('banner_one');
+									$banner_three = get_field('banner_three');
+					 				get_template_part( 'tamplates/head-mail' );
+					 				get_template_part( 'tamplates/header-mail--new' );  
+					 				get_template_part( 'tamplates/variative-mail' );  
+					 				get_template_part( 'tamplates/footer-mail--new' ); 
+					 			?>
+				   		</script>
+				   	</code>
+		   	</pre>
+	   	</div>
+		</div>
+	</div>
+
+
+	<div class="wrapper">	
+		<div class="mail">
+	   	<div class="mail_item">
+	   		<?php 
+					$banner_one = get_field('banner_three');
+					$banner_two = get_field('banner_two');
+					$banner_three = get_field('banner_one');
+	 				get_template_part( 'tamplates/header-mail--new' );  
+	 				get_template_part( 'tamplates/variative-mail' );  
+	 				get_template_part( 'tamplates/footer-mail--new' ); 
+	 			?>
+	   	</div>
+		</div>    
+		<div class="code">
+	   	<div class="code_item">
+		   	<pre>
+				   	<code class="language-markup">
+				   		<script type="prism-html-markup">
+					   		<?php 
+									$banner_one = get_field('banner_three');
+									$banner_two = get_field('banner_two');
+									$banner_three = get_field('banner_one');
+					 				get_template_part( 'tamplates/head-mail' );
+					 				get_template_part( 'tamplates/header-mail--new' );  
+					 				get_template_part( 'tamplates/variative-mail' );  
+					 				get_template_part( 'tamplates/footer-mail--new' ); 
+					 			?>
+				   		</script>
+				   	</code>
+		   	</pre>
+	   	</div>
+		</div>
+	</div>
+
+
+	<div class="wrapper">	
+		<div class="mail">
+	   	<div class="mail_item">
+	   		<?php 
+					$banner_one = get_field('banner_one');
+					$banner_two = get_field('banner_three');
+					$banner_three = get_field('banner_two');
+	 				get_template_part( 'tamplates/header-mail--new' );  
+	 				get_template_part( 'tamplates/variative-mail' );  
+	 				get_template_part( 'tamplates/footer-mail--new' ); 
+	 			?>
+	   	</div>
+		</div>    
+		<div class="code">
+	   	<div class="code_item">
+		   	<pre>
+				   	<code class="language-markup">
+				   		<script type="prism-html-markup">
+					   		<?php 
+									$banner_one = get_field('banner_one');
+									$banner_two = get_field('banner_three');
+									$banner_three = get_field('banner_two');
+					 				get_template_part( 'tamplates/head-mail' );
+					 				get_template_part( 'tamplates/header-mail--new' );  
+					 				get_template_part( 'tamplates/variative-mail' );  
+					 				get_template_part( 'tamplates/footer-mail--new' ); 
+					 			?>
+				   		</script>
+				   	</code>
+		   	</pre>
+	   	</div>
+		</div>
+	</div>
+
+
+	<div class="wrapper">	
+		<div class="mail">
+	   	<div class="mail_item">
+	   		<?php 
+					$banner_one = get_field('banner_two');
+					$banner_two = get_field('banner_three');
+					$banner_three = get_field('banner_one');
+	 				get_template_part( 'tamplates/header-mail--new' );  
+	 				get_template_part( 'tamplates/variative-mail' );  
+	 				get_template_part( 'tamplates/footer-mail--new' ); 
+	 			?>
+	   	</div>
+		</div>    
+		<div class="code">
+	   	<div class="code_item">
+		   	<pre>
+				   	<code class="language-markup">
+				   		<script type="prism-html-markup">
+					   		<?php 
+									$banner_one = get_field('banner_two');
+									$banner_two = get_field('banner_three');
+									$banner_three = get_field('banner_one');
+					 				get_template_part( 'tamplates/head-mail' );
+					 				get_template_part( 'tamplates/header-mail--new' );  
+					 				get_template_part( 'tamplates/variative-mail' );  
+					 				get_template_part( 'tamplates/footer-mail--new' ); 
+					 			?>
+				   		</script>
+				   	</code>
+		   	</pre>
+	   	</div>
+		</div>
+	</div>
+
+
+	<div class="wrapper">	
+		<div class="mail">
+	   	<div class="mail_item">
+	   		<?php 
+					$banner_one = get_field('banner_three');
+					$banner_two = get_field('banner_two');
+					$banner_three = get_field('banner_one');
+	 				get_template_part( 'tamplates/header-mail--new' );  
+	 				get_template_part( 'tamplates/variative-mail' );  
+	 				get_template_part( 'tamplates/footer-mail--new' ); 
+	 			?>
+	   	</div>
+		</div>    
+		<div class="code">
+	   	<div class="code_item">
+		   	<pre>
+				   	<code class="language-markup">
+				   		<script type="prism-html-markup">
+					   		<?php 
+									$banner_one = get_field('banner_three');
+									$banner_two = get_field('banner_two');
+									$banner_three = get_field('banner_one');
+					 				get_template_part( 'tamplates/head-mail' );
+					 				get_template_part( 'tamplates/header-mail--new' );  
+					 				get_template_part( 'tamplates/variative-mail' );  
+					 				get_template_part( 'tamplates/footer-mail--new' ); 
+					 			?>
+				   		</script>
+				   	</code>
+		   	</pre>
+	   	</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
 </section>
 <?php get_footer(); ?>
