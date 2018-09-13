@@ -54,24 +54,57 @@ nav li {
 
 .mail {
   display: block;
-  width: 620px;
+  width: 100%;
   padding: 10px;
   background: #f5f2f0;
+  box-sizing: content-box;
 }
 
 .mail_item {
   background: #fff;
   height: auto;
-  width: 600px;
+  width: 100%;
 }
 
 .code {
-  width: calc(100% - 620px);
+  width: 100%;
   background-color: #fff;
-  padding: 15px;
+  margin: auto;
+  padding: 10px;
+  box-sizing: content-box;
+}
+
+.code textarea {
+  display: block;
+  width: 100%;
+  height: 200px;
+  resize: none;
 }
 
 .wrapper {
-  display: flex;
-  padding: 20px;
+  display: block;
+  padding: 0;
+  margin: 15px;
+  width: 600px;
+}
+
+.js-textareacutbtn {
+  height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: red;
+  border: 2px solid #f00;
+  margin: 15px 0;
+  width: auto;
+  padding: 0 31px;
+  color: #fff;
+  border-radius: 26px;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
