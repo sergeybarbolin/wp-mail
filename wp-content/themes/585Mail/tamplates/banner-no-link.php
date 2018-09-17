@@ -1,0 +1,3 @@
+  <tr>
+    <td style="-ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; border-collapse: collapse !important; border-spacing: 0; line-height: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; padding-bottom: 0px; padding-left: 0; padding-right: 0; padding-top: 0;"><img class="imageFix" width="100%" height="" border="0" src="<?php the_sub_field('flex-banner-no-link_img'); ?>" alt="" style="-ms-interpolation-mode: bicubic; border: none; border-style: none; clear: both; display: block; outline: none; outline-style: none; text-decoration: none;"></td>
+  </tr>

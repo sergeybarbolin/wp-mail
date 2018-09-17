@@ -1,0 +1,3 @@
+<tr>
+	<td align="center" colspan="2" width="100%" height="<?php the_sub_field('offset'); ?>" valign="top" style="-ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; border-collapse: collapse !important; border-spacing: 0; line-height: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; padding-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0;"></td>
+</tr>
