@@ -13,6 +13,7 @@ if( !empty($banner_one) ): ?>
       $productCounter = 0;
       $products = count($images);
       $midpoint = $products / 2;
+
       if( $images ): ?>
           <tr>
               <?php foreach( $images as $image ):
